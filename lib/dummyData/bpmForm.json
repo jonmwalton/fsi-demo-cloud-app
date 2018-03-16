@@ -1,0 +1,108 @@
+// {
+//   "form": {
+//     "dataHolder": [{
+//       "id": "dataIn",
+//       "inputId": "datain",
+//       "name": "#E9E371",
+//       "outId": "",
+//       "type": "basicType",
+//       "value": "java.lang.String"
+//     }, {
+//       "id": "dataOut01",
+//       "inputId": "",
+//       "name": "#E9E371",
+//       "outId": "dataOut01",
+//       "type": "basicType",
+//       "value": "java.lang.String"
+//     }, {
+//       "id": "datainv",
+//       "inputId": "datainf",
+//       "name": "#000000",
+//       "outId": "",
+//       "type": "basicType",
+//       "value": "java.lang.String"
+//     }, {
+//       "id": "dataoutv",
+//       "inputId": "",
+//       "name": "#0000A0",
+//       "outId": "dataoutf",
+//       "type": "basicType",
+//       "value": "java.lang.String"
+//     }, {
+//       "id": "newProduct",
+//       "inputId": "",
+//       "name": "#E9E371",
+//       "outId": "newProduct",
+//       "type": "basicType",
+//       "value": "java.lang.Boolean"
+//     }],
+//     "displayMode": "default",
+//     "field": [{
+//       "errorMessage": "",
+//       "fieldClass": "java.lang.Boolean",
+//       "fieldRequired": true,
+//       "id": 395153188,
+//       "label": "newProduct (newProduct)",
+//       "name": "newProduct",
+//       "outputBinding": "newProduct",
+//       "position": 0,
+//       "readonly": false,
+//       "title": "",
+//       "type": "CheckBox"
+//     }, {
+//       "fieldClass": "java.lang.String",
+//       "fieldRequired": false,
+//       "id": 1442714425,
+//       "label": "dataOut01 (dataOut01)",
+//       "name": "dataOut01",
+//       "outputBinding": "dataOut01",
+//       "position": 1,
+//       "readonly": false,
+//       "type": "InputText"
+//     }, {
+//       "fieldClass": "java.lang.String",
+//       "fieldRequired": false,
+//       "id": 1480751204,
+//       "inputBinding": "datain",
+//       "label": "datain (dataIn)",
+//       "name": "dataIn",
+//       "position": 2,
+//       "readonly": false,
+//       "type": "InputText"
+//     }, {
+//       "errorMessage": "",
+//       "fieldClass": "java.lang.String",
+//       "fieldRequired": true,
+//       "hideContent": false,
+//       "id": 873390312,
+//       "inputBinding": "datainf",
+//       "isHTML": false,
+//       "label": "datainf (datainv)",
+//       "name": "datainv",
+//       "position": 3,
+//       "readonly": false,
+//       "title": "",
+//       "type": "InputText"
+//     }, {
+//       "errorMessage": "",
+//       "fieldClass": "java.lang.String",
+//       "fieldRequired": true,
+//       "hideContent": false,
+//       "id": 1244410699,
+//       "isHTML": false,
+//       "label": "dataoutf (dataoutv)",
+//       "name": "dataoutv",
+//       "outputBinding": "dataoutf",
+//       "position": 4,
+//       "readonly": false,
+//       "title": "",
+//       "type": "InputText"
+//     }],
+//     "id": 889093299,
+//     "name": "OfferNewProduct-taskform.form",
+//     "status": 0
+//   }
+// }
+
+// dataholder is formatting stuff basically
+// we need to parse the fields into a form we can display, capture the input, and include with the complete task call

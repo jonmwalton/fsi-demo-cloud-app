@@ -1,0 +1,50 @@
+{
+  "name": "fsi-cloud",
+  "appID": "mpas6im3edr3vywutlyeky52",
+  "version": "0.2.0",
+  "dependencies": {
+    "async": "~2.5.0",
+    "bluebird": "~3.5.0",
+    "body-parser": "~1.0.2",
+    "cors": "~2.2.0",
+    "express": "~4.0.0",
+    "fh-mbaas-api": "7.0.9",
+    "lodash": "~4.17.4",
+    "mongodb": "~2.2.30",
+    "request": "2.79.0",
+    "request-promise": "~4.2.1",
+    "winston": "~2.3.1"
+  },
+  "devDependencies": {
+    "grunt": "~1.0.1",
+    "grunt-concurrent": "latest",
+    "grunt-contrib-jshint": "^0.11.3",
+    "grunt-contrib-watch": "latest",
+    "grunt-env": "~0.4.1",
+    "grunt-node-inspector": ">=0.2.0",
+    "grunt-nodemon": "0.4.2",
+    "grunt-open": "~0.2.3",
+    "grunt-plato": "~1.0.0",
+    "grunt-shell": "^0.7.0",
+    "istanbul": "0.2.7",
+    "load-grunt-tasks": "^0.4.0",
+    "mocha": "^2.1.0",
+    "proxyquire": "0.5.3",
+    "should": "2.1.1",
+    "sinon": "^1.17.2",
+    "supertest": "0.8.2",
+    "time-grunt": "^0.3.2"
+  },
+  "main": "application.js",
+  "scripts": {
+    "test": "grunt unit",
+    "debug": "grunt serve",
+    "start": "node application.js",
+    "rhmap:logs:dev": "./scripts/fhlogs.sh $npm_package_appID evals-dev",
+    "rhmap:logs:test": "./scripts/fhlogs.sh $npm_package_appID evals-test",
+    "rhmap:gitpull": "./scripts/fhgitpull.sh $npm_package_appID",
+    "rhmap:resources:dev": "./scripts/fhresources.sh $npm_package_appID evals-dev",
+    "rhmap:resources:test": "./scripts/fhresources.sh $npm_package_appID evals-test"
+  },
+  "license": "mit"
+}

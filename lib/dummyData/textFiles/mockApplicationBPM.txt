@@ -1,0 +1,43 @@
+{
+  "applicationType": "PERSONAL",
+  "application": {
+    "id": 123,
+    "demographics": {
+      "birthPlace": "dublin",
+      "countryOfBirth": "ireland",
+      "gender": "male",
+      "nationality": "Ireland"
+    },
+    "email": {
+      "emailAddress": "werwer@erwe.com",
+      "okToEmail": "true"
+    },
+    "phone": null,
+    "financialInformation": null,
+    "employmentDetails": null,
+    "addrehs": {
+      "addressLine1": "123 big house"
+    }
+  },
+  "personalDetails": {
+    "name": {
+      "id": 222,
+      "salutation": "Ms",
+      "givenName": "Bill",
+      "middleName": "K",
+      "surname": "Buggles",
+      "fullName": "Sandra Synonyn"
+    },
+    "email": {
+      "emailAddress": "matt.hayden@gmail.com",
+      "okToEmail": true
+    },
+    "phone": {
+      "phoneNumber": "64042321",
+      "okToSms": true,
+      "okToCall": true
+    }
+  },
+  "additionalDocsRequired": false,
+  "validApp": true
+}

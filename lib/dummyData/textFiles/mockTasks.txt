@@ -1,0 +1,124 @@
+exports.tasks = [{
+  "taskId": "1111111",  // TASK PROCESS VARIABLE
+  "taskName": "Offer New Product",  // TASK PROCESS VARIABLE
+  "taskDescription": "task description",  // TASK PROCESS VARIABLE
+  "caseId": "111",  // CASE PROCESS VARIABLE
+  "assignedTo": "ADMIN", //  TASK PROCESS VARIABLE
+  "taskStatus": "Ready", // TASK PROCESS VARIABLE
+  "form": { // TASK FORM
+      "dataHolder": [
+        {
+          "id": "GFCID",
+          "inputId": "taskGFCID",
+          "name": "#0000A0",
+          "outId": "taskGFCID",
+          "type": "basicType",
+          "value": "java.lang.String"
+        },
+        {
+          "id": "caseID",
+          "inputId": "taskCaseID",
+          "name": "#BBBBBB",
+          "outId": "",
+          "type": "basicType",
+          "value": "java.lang.Long"
+        },
+        {
+          "id": "caseID_listener",
+          "inputId": "",
+          "name": "#A7E690",
+          "outId": "taskCaseID",
+          "type": "basicType",
+          "value": "java.lang.Long"
+        },
+        {
+          "id": "currentTaskBusinessOwner",
+          "inputId": "currentTaskBusinessOwner",
+          "name": "#0000A0",
+          "outId": "currentTaskBusinessOwner",
+          "type": "basicType",
+          "value": "java.lang.String"
+        },
+        {
+          "id": "dmCheckSuccessStatus",
+          "inputId": "",
+          "name": "#FF8881",
+          "outId": "dmCheckStatus",
+          "type": "basicType",
+          "value": "java.lang.String"
+        },
+        {
+          "id": "dmPreviousTaskEndTime",
+          "inputId": "startTime",
+          "name": "#FF54A7",
+          "outId": "finishTime",
+          "type": "basicType",
+          "value": "java.util.Date"
+        },
+        {
+          "id": "dmPreviousTaskStartTime",
+          "inputId": "",
+          "name": "#E9E371",
+          "outId": "startTime",
+          "type": "basicType",
+          "value": "java.util.Date"
+        }
+      ],
+      "displayMode": "default",
+      "field": [
+        {
+          "errorMessage": "",
+          "fieldClass": "java.lang.String",
+          "fieldRequired": true,
+          "groupWithPrevious": false,
+          "hideContent": false,
+          "id": 1286932932,
+          "isHTML": false,
+          "label": "Select Documentation Management Status",
+          "name": "dmCheckSuccessStatus",
+          "outputBinding": "dmCheckStatus",
+          "position": 0,
+          "rangeFormula": "{rework,Incomplete against Checklist;complete,Complete against Doc Checklist - Send to ADU for Doc Verification}",
+          "readonly": false,
+          "title": "",
+          "type": "InputText"
+        },
+        {
+          "errorMessage": "",
+          "fieldClass": "java.util.Date",
+          "fieldRequired": true,
+          "groupWithPrevious": false,
+          "hideContent": false,
+          "id": 2054028392,
+          "inputBinding": "2017-06-09T13:35:05.551Z",
+          "isHTML": false,
+          "label": "Completion Date & Time",
+          "name": "dmPreviousTaskEndTime",
+          "outputBinding": "finishTime",
+          "position": 1,
+          "readonly": false,
+          "title": "",
+          "type": "InputDate"
+        },
+        {
+          "errorMessage": "",
+          "fieldClass": "java.lang.String",
+          "fieldRequired": false,
+          "hideContent": false,
+          "id": 2092256050,
+          "inputBinding": "Niamh Dunne",
+          "isHTML": false,
+          "label": "Business Owner",
+          "name": "currentTaskBusinessOwner",
+          "outputBinding": "currentTaskBusinessOwner",
+          "position": 2,
+          "readonly": true,
+          "title": "",
+          "type": "InputText"
+        }
+      ],
+      "id": 1187263871,
+      "name": "VerifyAgainstDocChecklist-taskform.form",
+      "status": 0
+    }
+}]

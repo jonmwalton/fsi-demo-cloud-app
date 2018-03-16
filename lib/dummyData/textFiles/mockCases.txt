@@ -1,0 +1,52 @@
+exports.cases = [{
+  "caseId": "123456789012",  // PROCESS VARIABLE
+  "caseAssignedTo" : " Bill BankGuy", // CASE VARIABLE
+  "dateCreated": "1499814264000",   // PROCESS VARIABLE
+  "dateLastUpdate": "1499814264000", // CASE VARIABLE
+  "applicationType": "Home Loan", // CASE VARIABLE
+  "applicationData": {"data": "******** SEE mockApplication.js ******** "},  // // CASE VARIABLE  - array of doc references
+  "applicantDetails": {"data" : "******** SEE poersonalDetails in mockApplication.js ******** "}, //// CASE VARIABLE
+  "status": "Ready", // PROCESS VARIABLE
+  "tasks": [{ // CASE VARIABLE  The task list will represent the simplified UI representation of the processes. Other task details can be retrieved using the task id
+    "name": "Validate Application",
+    "status": "COMPLETE", // FAILED | IN_PROGRESS
+    "dateCompleted" : "1499814264000",
+  }, {
+    "name": "Application Acknowledged",
+    "status": "COMPLETE", // FAILED | IN_PROGRESS
+    "dateCompleted" : "1499814264000",
+  }, {
+    "name": "Location Fraud Check",
+    "status": "COMPLETE", // FAILED | IN_PROGRESS
+    "dateCompleted" : "1499814264000",
+  }, {
+    "name": "Assign Internal Owner",
+    "status": "COMPLETE", // FAILED | IN_PROGRESS
+    "dateCompleted" : "1499814264000",
+  }, {
+    "name": "Document Check",
+    "status": "IN_PROGRESS", 
+    "dateCompleted" : null,
+  }, {
+    "name": "Offer New Product",
+    "status": null,
+    "dateCompleted" : null,
+  }, {
+    "name": "Interview",
+    "status": null,
+    "dateCompleted" : null,
+  }, {
+    "name": "Final Approval",
+    "status": null,
+    "dateCompleted" : null,
+  }],
+  "caseComments": [{
+    "comment": "This is a comment",
+    "timestamp": "",
+    "author": "ADMIN" // CONSUMER
+  }],
+  "currentTaskName": "Document Check", // TASK PROCESS VARIABLE
+  "currentTaskOwner": "APPLICANT", // "ADMIN" or is it a name?  TASK PROCESS VARIABLE
+  "currentTaskId": "12",  TASK PROCESS VARIABLE
+  "currentTaskStatus":  "READY",  TASK PROCESS VARIABLE
+}]
